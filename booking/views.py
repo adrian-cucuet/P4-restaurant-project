@@ -8,7 +8,7 @@ def meal_list(request):
 
     context = {'meal_list' : meal_list ,}
 
-    return render(request, 'Meals/list.html', context)
+    return render(request, 'list.html', context)
 
 
 def meal_detail(request, slug):
@@ -16,4 +16,4 @@ def meal_detail(request, slug):
 
     context = {'meal_detail' : meal_detail ,}
 
-    return render(request, 'Meals/detail.html', context)
+    return render(request, 'detail.html', context)
