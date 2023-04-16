@@ -415,12 +415,13 @@ body {
 
 .meal-detail-col {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
 .meal-img {
-    width: 100% !important;
+    width: 500px;
 }
 
 .form-label {

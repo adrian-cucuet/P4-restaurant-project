@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Meals, Category, Reservation
 from .forms import ReserveTableForm
+from django.http import HttpResponse
 
 # Create your views here.
 
