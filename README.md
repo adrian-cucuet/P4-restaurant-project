@@ -50,27 +50,19 @@ README Table Content
 6. View the number of likes on a recipe thereby showing which is most popular.
 7. View comments on recipes so that I can read other users opinions.
 
-* As logged in website user, I can:
+* As a website user, I can:
 
-1. Like/unlike recipes marking the recipes I enjoyed.
-2. Comment on recipes and give my opinion about the posts.
-3. Delete my previous comments.
-4. Manage my profile by updating my details and user image.
-5. Share my favourites cookbooks by posting them on the Books Page.
-6. Edit my favourite cookbook posted previously.
-7. Delete my favourite cookbook posted previously.
-8. Logout from the website.
+1. Check learn more about the business.
+2. Check the menu of the restaurant.
+3. Make a reservation on the website.
+4. See the contact information and social media of the business.
 
 * As a website superuser, I can:
 
-1. Create and publish a new recipe.
-2. Create draft recipe posts that can be reviewed and finalised later.
-3. Create a new user, recipes, author and categories.
-4. Delete user, recipes, author, categories and comments.
-5. Approve user's comments.
-6. Edit user's favourite cookbook that was posted previously.
-7. Delete user's favourite cookbook that was posted previously.
-8. Change the website permissions for a user.
+1. Create and publish a new menu items.
+2. Check the reservations and see the user data so I can contact them to confirm.
+3. Create a new category for the menu (existing categories are Breakfast, Lunch, Dinner).
+4. Delete items from the menu and reservations.
 
 ### Agile Methodology
 
@@ -91,16 +83,8 @@ All functionality and development of this project were managed using GitHub whic
 
 ![Colours Palete](./assets/readme/extras/tasty_blog_colors_palete.png)<br>
 
-* The colour scheme is kept simple by opting for a combination of white text set against the image
-background and black text against the white background. For the navbar was set as a white background
-colour that changes when the user scrolls. For a linear gradient, 3 colours were used dark
-blue, orange and purple. This gradient is also used as a search box background. To highlight
-the icons an interactive colour set of light blue was used.
-
-#### Typography
-
-* The Lato font is used as the main font for the whole project and the Kaushan font is used to
-display the word enjoy in the Post Details and About pages.
+* The colour scheme is kept simple by opting for a combination of light and dark colors with a primary color as an accent.
+* In order to keep the colors cohesive I have decided to use variables.
 
 #### Imagery
 
@@ -157,8 +141,6 @@ Wireframes for this project can be located [here](wireframes.md)
    As the server for Heroku
 * [Cloudinary](https://cloudinary.com/)<br>
    Was used to host the static files and media
-* [Dj_database_url](https://pypi.org/project/dj-database-url/)<br>
-   To parse the database URL from the environment variables in Heroku
 * [Psycopg2](https://pypi.org/project/psycopg2/)<br>
    As an adaptor for Python and PostgreSQL databases
 
@@ -178,8 +160,6 @@ Wireframes for this project can be located [here](wireframes.md)
    Database used through heroku.
 * [VSCode](https://code.visualstudio.com/)<br>
    VSCode was used to create and edit the website
-* [PEP8](http://pep8online.com/)<br>
-   PEP8 was used to validate all the Python code
 * [W3C - HTML](https://validator.w3.org/)<br>
    W3C- HTML was used to validate all the HTML code
 * [W3C - CSS](https://jigsaw.w3.org/css-validator/)<br>
@@ -189,11 +169,12 @@ Wireframes for this project can be located [here](wireframes.md)
 * [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)<br>
    To check App responsiveness and debugging
 * [Google Fonts](https://fonts.google.com/)<br>
-   To add the 2 fonts that were used throughout the project
 
 ### Testing
 
-Testing results [here](testing.md)
+* Manual testing has been performed for the Reservation form.
+* Manual testing has been performed for every page on the website as well as navigation.
+* During testing I have noticed in the menu page the images are not showing. This is an issue that still needs to be fixed.
 
 ## Creating the Django app
 
@@ -254,7 +235,7 @@ App
 
 * Clone this project by following the steps:
 
-1. Open [GitHub](https://github.com/PedroCristo/portfolio_project_4)
+1. Open GitHub
 2. You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order
 to copy the URL
 3. Once you click the button the fork will be in your repository
@@ -263,21 +244,16 @@ to copy the URL
 6. Type 'git clone' and paste the URL copied in step 3
 7. Press 'Enter' and the project is cloned
 
-## Credits
-
 ### Content
 
-* Website Template
+* Website Template is from [ThemeWagon](https://themewagon.com/) and it is free for use. I had to change some html and CSS to adjust to the needs of the wireframe and user stories.
+* Pictures are free from the template. The template comes with free licensed images.
 
-### Information Sources / Resources
+### Information Sources / Resources / Credits
 
 * [W3Schools - Python](https://www.w3schools.com/python/)
 * [Stack Overflow](https://stackoverflow.com/)
-
-## Special Thanks
-
-* Special thanks to 
-
-
-
-
+* [Django](https://docs.djangoproject.com/en/4.2/)
+   Used when I had issues that needed to be fixed.
+* [Udemy](https://www.udemy.com/course/build-a-restuarnt-site-with-python-and-django/)
+   Used the tutorial for models and views.
