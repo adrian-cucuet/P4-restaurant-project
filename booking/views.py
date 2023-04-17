@@ -5,14 +5,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def home(request):
-
-    return render(request, 'home.html')
-
-def about(request):
-
-    return render(request, 'about.html')
-
 def meal_list(request):
     meal_list = Meals.objects.all()
     categories = Category.objects.all()
@@ -45,3 +37,11 @@ def reserve_table(request):
     context = {'form' : reserve_form}
 
     return render(request, 'reservation.html', context)
+
+def home(request):
+    
+    return render(request, 'home.html')
+
+def about(request):
+
+    return render(request , 'about.html')

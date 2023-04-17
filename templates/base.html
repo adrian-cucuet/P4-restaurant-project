@@ -50,7 +50,6 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-4 px-lg-5 py-3 py-lg-0">
                 <a href="{% url 'booking:home' %}" class="navbar-brand p-0">
                     <h1 class="text-h m-0"><i class="fa fa-hamburger me-3"></i>Foody</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -58,9 +57,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="{% url 'booking:home' %}" class="nav-item nav-link">Home</a>
-                        <a href="#" class="nav-item nav-link">About Us</a>
-                        <a href="{% url 'booking:meal_list' %}" class="nav-item nav-link">Menu</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="{% url 'booking:about' %}" class="nav-item nav-link {% if '/about.html' in request.path %}active{% endif %}">About Us</a>
+                        <a href="{% url 'booking:meal_list' %}" class="nav-item nav-link {% if '/menu.html' in request.path %}active{% endif %}">Menu</a>
                     </div>
                     <a href="{% url 'booking:reserve_table' %}" class="btn btn-primary py-2 px-4">Reserve Table</a>
                 </div>
@@ -77,25 +75,19 @@
                 <div class="row g-5">
                     <div class="col">
                         <h4 class="ff-secondary text-h fw-normal mb-4">Foody</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Our Menu</a>
-                        <a class="btn btn-link" href="">Contact</a>
+                        <a class="btn btn-link" href="{% url 'booking:about' %}">About Us</a>
+                        <a class="btn btn-link" href="{% url 'booking:meal_list' %}">Our Menu</a>
                         <a class="btn btn-link" href="{% url 'booking:reserve_table' %}">Reservation</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                     </div>
                     <div class="col text-align-center">
+                        <h1 class="text-h m-0"><i class="fa fa-hamburger me-3"></i>Foody</h1>
+                    </div>
+                    <div class="col text-aling-right">
                         <h4 class="ff-secondary text-h fw-normal mb-4">Contact</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Dublin, IE</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        
-                    </div>
-                    <div class="col text-aling-right">
-                        <h4 class="ff-secondary text-h fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                        <p>09AM - 11PM</p>
-                        <h5 class="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 09PM</p>
                     </div>
                 </div>
             </div>
